@@ -1,0 +1,23 @@
+h1 {
+  color: #996699;
+  font-family:verdana;
+  text-align:center;
+}
+h1:hover {
+  color: #EE99EE;
+}
+th, td {
+  border: 1px solid #996699;
+  padding: 15px;
+  background-color: #ffeeff;
+}
+th, td:hover {
+    background-color: #F4DEF4;
+}
+table{
+  font-family:verdana;
+  width:auto;
+}
+.AST {
+  display: inline-block;
+}
