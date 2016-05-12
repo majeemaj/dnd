@@ -1,23 +1,25 @@
-h1 {
-  color: #996699;
-  font-family:verdana;
-  text-align:center;
+.header {
+    background-color:black;
+    color:white;
+    text-align:center;
 }
-h1:hover {
-  color: #EE99EE;
+.nav {
+    line-height:35px;
+    background-color:#eeeeee;
+    height:300px;
+    width:10%;
+    float:left;
+    padding:5px;
 }
-th, td {
-  border: 1px solid #996699;
-  padding: 15px;
-  background-color: #ffeeff;
+.section {
+    width:80%;
+    float:left;
+    padding:10px;
 }
-th, td:hover {
-    background-color: #F4DEF4;
-}
-table{
-  font-family:verdana;
-  width:auto;
-}
-.AST {
-  display: inline-block;
+.footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px;
 }

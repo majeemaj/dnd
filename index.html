@@ -1,68 +1,109 @@
-<!DOCTYPE html>
 <html>
-<head>
-	<title>Dadu - Create a new character</title>
-	<link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-	<h1>The Pathfinder Character Sheet</h1>
-	<hr>
-		<table>
-			<caption>Character Information</caption>
-			<tr>
-				<td></b>Name:</b></td>
-				<td></b>Player:</b></td>
-				<td></b>Alignment:</b></td>
-				<td></b>Deity:</b></td>
-				<td></b>Class:</b></td>
-			</tr>
-			<tr>
-				<td></b>Size:</b></td>
-				<td></b>Gender:</b></td>
-				<td></b>Age:</b></td>
-				<td></b>Height:</b></td>
-				<td></b>Weight:</b></td>
-			</tr>
-			<tr>
-				<td></b>Homeland:</b></td>
-				<td></b>Race:</b></td>
-				<td></b>Skin</b></td>
-				<td></b>Hair:</b></td>
-				<td></b>Eyes:</b></td>
-			</tr>
-		</table>
-		<table class="AST";>
-			<caption>Ability Scores</caption>
-			<tr>
-				<td>STR</td>
-			</tr>
-			<tr>
-				<td>DEX</td>
-			</tr>
-			<tr>
-				<td>CON</td>
-			</tr>
-			<tr>
-				<td>INT</td>
-			</tr>
-			<tr>
-				<td>WIS</td>
-			</tr>
-			<tr>
-				<td>CHA</td>
-			</tr>
-		</table>
-		<table class="AST";>
-			<caption>Status</caption>
-			<tr>
-				<td>Health</td>
-				<td>Speed</td>
-				<td>Fortitude Base</td>
-				<td>Reflex Base</td>
-				<td>Will Base</td>
-			</tr>
-		</table>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/styles.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	</head>
+	<body data-spy="scroll" data-target=".navbar" data-offset="50">>
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+		  <div class="container-fluid">
+		    <div class="navbar-header">
+		        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+		          <span class="icon-bar"></span>
+		          <span class="icon-bar"></span>
+		          <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="#">WebSiteName</a>
+		    </div>
+		    <div>
+		      <div class="collapse navbar-collapse" id="myNavbar">
+		        <ul class="nav navbar-nav">
+		          <li><a href="#bi">Background Information</a></li>
+		          <li><a href="#section2">Section 2</a></li>
+		          <li><a href="#section3">Section 3</a></li>
+		          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Section 4 <span class="caret"></span></a>
+		            <ul class="dropdown-menu">
+		              <li><a href="#section41">Section 4-1</a></li>
+		              <li><a href="#section42">Section 4-2</a></li>
+		            </ul>
+		          </li>
+		        </ul>
+		      </div>
+		    </div>
+		  </div>
+		</nav>
 
+<!-- Character Information -->
 
-</body>
+		<div id=bi class="container-fluid">
+			<div class="container">
+				<div class="page-header">
+						<h1><abbr title="Dungeons and Dragons Utilities"><small>DADU</small></abbr> Character Sheet</h1>
+				</div>
+			</div>
+			<div class="container">
+				<div class="alert alert-info fade in">
+					<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+					<p>Please fill out the information below.</p>
+				</div>
+				<form role="form-horizontal">
+					<div class="form-group">
+						<label class="control-label col-sm-2" for="characterName">Character Name</label>
+						<div class="col-sm-10">
+							<input type="Name" class="form-control" id="chn">
+						</div>
+					</div>
+					<div class="form-group" role="form">
+						<label class="control-label col-sm-2" for="playerName">Player Name</label>
+						<div class="col-sm-10">
+							<input type="Name" class="form-control" id="pln">
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="container">
+				<div class="jumbotron">
+					<form role="form-horizontal">
+						<div class="form-group">
+							<label class="control-label col-sm-1" for="alignment">Alignment</label>
+							<div class="col-sm-2">
+								<input type="Name" class="form-control" id="alm">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-1" for="deity">Deity</label>
+							<div class="col-sm-2">
+								<input type="Name" class="form-control" id="dit">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-1" for="class">Class</label>
+							<div class="col-sm-2">
+								<input type="Name" class="form-control" id="cls">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-1" for="race">Race</label>
+							<div class="col-sm-2">
+								<input type="Name" class="form-control" id="rac">
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="container">
+				<button type="button" class="btn btn-primary btn-block">Next</button>
+			</div>
+			<div class="container">
+				<div class="progress">
+		  		<div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+		    		50% Complete (info)
+		  		</div>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
