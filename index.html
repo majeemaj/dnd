@@ -8,6 +8,9 @@
 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	</head>
 	<body data-spy="scroll" data-target=".navbar" data-offset="50">>
+
+	<!-- Header -->
+
 		<nav class="navbar navbar-inverse navbar-fixed-top">
 		  <div class="container-fluid">
 		    <div class="navbar-header">
@@ -16,56 +19,54 @@
 		          <span class="icon-bar"></span>
 		          <span class="icon-bar"></span>
 		      </button>
-		      <a class="navbar-brand" href="#">WebSiteName</a>
+		      <a class="navbar-brand" href="#">DADU</a>
 		    </div>
 		    <div>
 		      <div class="collapse navbar-collapse" id="myNavbar">
 		        <ul class="nav navbar-nav">
-		          <li><a href="#bi">Background Information</a></li>
-		          <li><a href="#section2">Section 2</a></li>
-		          <li><a href="#section3">Section 3</a></li>
-		          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Section 4 <span class="caret"></span></a>
-		            <ul class="dropdown-menu">
-		              <li><a href="#section41">Section 4-1</a></li>
-		              <li><a href="#section42">Section 4-2</a></li>
-		            </ul>
-		          </li>
+		          <li><a href="#ci">Background Information</a></li>
+		          <li><a href="#cd">Character Descrition</a></li>
+		          <li><a href="#as">Ability Scores</a></li>
 		        </ul>
 		      </div>
 		    </div>
 		  </div>
 		</nav>
-
-<!-- Character Information -->
-
-		<div id=bi class="container-fluid">
+		<div id=ci class="container-fluid">
 			<div class="container">
 				<div class="page-header">
 						<h1><abbr title="Dungeons and Dragons Utilities"><small>DADU</small></abbr> Character Sheet</h1>
 				</div>
 			</div>
+
+<!-- Character Information -->
+
 			<div class="container">
 				<div class="alert alert-info fade in">
 					<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
 					<p>Please fill out the information below.</p>
 				</div>
-				<form role="form-horizontal">
-					<div class="form-group">
-						<label class="control-label col-sm-2" for="characterName">Character Name</label>
-						<div class="col-sm-10">
-							<input type="Name" class="form-control" id="chn">
-						</div>
-					</div>
-					<div class="form-group" role="form">
-						<label class="control-label col-sm-2" for="playerName">Player Name</label>
-						<div class="col-sm-10">
-							<input type="Name" class="form-control" id="pln">
-						</div>
-					</div>
-				</form>
-			</div>
-			<div class="container">
 				<div class="jumbotron">
+					<div class="container">
+					<form role="form-horizontal">
+						<div class="form-group">
+							<label class="control-label col-sm-2" for="characterName">Character Name</label>
+							<div class="col-sm-10">
+								<input type="Name" class="form-control" id="chn">
+							</div>
+						</div>
+					</form>
+					<form role="form-horizontal">
+						<div class="form-group" role="form">
+							<label class="control-label col-sm-2" for="playerName">Player Name</label>
+							<div class="col-sm-10">
+								<input type="Name" class="form-control" id="pln">
+							</div>
+						</div>
+					</form>
+				</div>
+				<hr>
+				<div class="container">
 					<form role="form-horizontal">
 						<div class="form-group">
 							<label class="control-label col-sm-1" for="alignment">Alignment</label>
@@ -94,16 +95,131 @@
 					</form>
 				</div>
 			</div>
-			<div class="container">
-				<button type="button" class="btn btn-primary btn-block">Next</button>
-			</div>
-			<div class="container">
-				<div class="progress">
-		  		<div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
-		    		50% Complete (info)
-		  		</div>
+		</div>
+
+<hr>
+
+<!-- Character Descrition -->
+
+<div id="cd" class="container">
+	<div class="alert alert-info fade in">
+		<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+		<p>Fill in the spaces what best fits your character.<p>
+	</div>
+	<div class="jumbotron">
+		<div class="row">
+			<form role="form-horizontal">
+				<div class="form-group">
+					<label class="control-label col-sm-1" for="size">Size</label>
+					<div class="col-sm-3">
+						<input type="Name" class="form-control" id="siz">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-sm-1" for="gender">Gender</label>
+					<div class="col-sm-3">
+						<input type="Name" class="form-control" id="gdr">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-sm-1" for="age">Age</label>
+					<div class="col-sm-3">
+						<input type="Name" class="form-control" id="age">
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="row">
+			<form role="form-horizontal">
+				<div class="form-group">
+					<label class="control-label col-sm-1" for="height">Height</label>
+					<div class="col-sm-3">
+						<input type="Name" class="form-control" id="hit">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-sm-1" for="weight">Weight</label>
+					<div class="col-sm-3">
+						<input type="Name" class="form-control" id="wit">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-sm-1" for="feature">Feature</label>
+					<div class="col-sm-3">
+						<input type="Name" class="form-control" id="fet">
+					</div>
+				</div>
+			</form>
+		</div>
+		<hr>
+		<div class="form-group">
+  		<label for="comment">Biography:</label>
+  		<textarea class="form-control" rows="5" id="comment"></textarea>
+		</div>
+	</div>
+</div>
+
+<hr>
+
+<!-- Ability Scores-->
+
+<div id=as class="container">
+	<div class="alert alert-info fade in">
+		<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+		<p>Unless instructed otherwise by your DM, roll 4 D6's and find the total of the highest 3 rolls 6 seperate times, then assign them to the 6 abilities below.</p>
+	</div>
+	<div class="jumbotron">
+		<form role="form-horizontal">
+			<div class="form-group">
+				<label class="control-label col-sm-1" for="strength"><abbr title="Strength">STR</abbr></label>
+				<div class="col-sm-1">
+					<input type="Name" class="form-control" id="str">
 				</div>
 			</div>
+			<div class="form-group">
+				<label class="control-label col-sm-1" for="dexterity"><abbr title="Dexterity">DEX</abbr></label>
+				<div class="col-sm-1">
+					<input type="Name" class="form-control" id="dex">
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="control-label col-sm-1" for="constitution"><abbr title="Constitution">CON</abbr></label>
+				<div class="col-sm-1">
+					<input type="Name" class="form-control" id="con">
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="control-label col-sm-1" for="intelligence"><abbr title="Intelligence">INT</abbr></label>
+				<div class="col-sm-1">
+					<input type="Name" class="form-control" id="int">
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="control-label col-sm-1" for="wisdom"><abbr title="Wisdom">WIS</abbr></label>
+				<div class="col-sm-1">
+					<input type="Name" class="form-control" id="wis">
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="control-label col-sm-1" for="charisma"><abbr title="Charisma">CHA</abbr></label>
+				<div class="col-sm-1">
+					<input type="Name" class="form-control" id="cha">
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+
+<!-- Footer -->
+<div class="container">
+	<button type="button" class="btn btn-primary btn-block">Next</button>
+</div>
+<div class="page-footer">
+	<div class="jumbotron">
+		<div class="container">
+			<h5>2016 © Majd Tarbin<br>All rights reserved.<br>Report issues at dadureport@gmail.com<br>(251)-512-3422</h5>
 		</div>
+	</div>
+</div>
 	</body>
 </html>

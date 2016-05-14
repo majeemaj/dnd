@@ -1,25 +1,3 @@
-.header {
-    background-color:black;
-    color:white;
-    text-align:center;
-}
-.nav {
-    line-height:35px;
-    background-color:#eeeeee;
-    height:300px;
-    width:10%;
-    float:left;
-    padding:5px;
-}
-.section {
-    width:80%;
-    float:left;
-    padding:10px;
-}
-.footer {
-    background-color:black;
-    color:white;
-    clear:both;
-    text-align:center;
-    padding:5px;
-}
+body {
+     position: relative;
+ }
